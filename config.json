@@ -1,13 +1,40 @@
 {
   "ntfy_topic": "SET_VIA_SECRET",
   "watches": [
-    {"name": "iPhone14-128", "query": "iPhone14 128GB", "price_min": 26000, "price_max": 41000,
-     "exclude": "Pro Plus ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム"},
-    {"name": "iPhone15-128", "query": "iPhone15 128GB", "price_min": 43000, "price_max": 61000,
-     "exclude": "Pro Plus ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム"},
-    {"name": "iPhone14Pro", "query": "iPhone14 Pro 128GB", "price_min": 40000, "price_max": 59000,
-     "exclude": "Max ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム"},
-    {"name": "iPadmini6", "query": "iPad mini 6 64GB", "price_min": 24000, "price_max": 39000,
-     "exclude": "ジャンク 割れ 空箱 箱のみ 専用 部品 ケース カバー キーボード フィルム Cellular セルラー"}
+    {
+      "name": "iPhone14-128",
+      "query": "iPhone14 128GB",
+      "price_min": 26000,
+      "price_max": 41000,
+      "exclude": "Pro Plus ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム"
+    },
+    {
+      "name": "iPhone15-128",
+      "query": "iPhone15 128GB",
+      "price_min": 43000,
+      "price_max": 61000,
+      "exclude": "Pro Plus ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム"
+    },
+    {
+      "name": "iPhone14Pro",
+      "query": "iPhone14 Pro 128GB",
+      "price_min": 40000,
+      "price_max": 59000,
+      "exclude": "Max ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム"
+    },
+    {
+      "name": "iPadmini6",
+      "query": "iPad mini 6 64GB",
+      "price_min": 24000,
+      "price_max": 39000,
+      "exclude": "ジャンク 割れ 空箱 箱のみ 専用 部品 ケース カバー キーボード フィルム Cellular セルラー"
+    },
+    {
+      "name": "14-劣化玉(修理用)",
+      "query": "iPhone14 128 バッテリー",
+      "price_min": 22000,
+      "price_max": 36000,
+      "exclude": "Pro Plus ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム 100%"
+    }
   ]
 }
