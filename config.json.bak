@@ -145,6 +145,5 @@
       "title_require": "3DS",
       "title_block": "2DS|DSi|DS\\s*Lite"
     }
-  ],
-  "max_age_hours": 48
+  ]
 }
