@@ -98,6 +98,20 @@
       "price_min": 8000,
       "price_max": 13000,
       "exclude": "ジャンク 片耳 左のみ 右のみ ケースのみ イヤーチップ 箱のみ 専用 互換"
+    },
+    {
+      "name": "OsmoPocket3事故拾い",
+      "query": "Osmo Pocket 3",
+      "price_min": 15000,
+      "price_max": 28000,
+      "exclude": "ジャンク 箱のみ 空箱 専用 ケースのみ フィルタ アクセサリ 破損"
+    },
+    {
+      "name": "New3DSLL事故拾い",
+      "query": "New 3DS LL 本体",
+      "price_min": 4000,
+      "price_max": 9000,
+      "exclude": "ジャンク 箱のみ 空箱 専用 部品 充電器のみ タッチペン 液晶 画面"
     }
   ]
 }
