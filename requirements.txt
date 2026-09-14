@@ -1,1 +1,1 @@
-mercapi==0.4.1
+mercapi==0.4.2
