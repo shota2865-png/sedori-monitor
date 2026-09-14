@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # メルカリ新着監視(クラウド版) → ntfyプッシュ。GitHub Actionsで10分おき実行。
-import asyncio, json, os, datetime
+import asyncio, json, os, datetime, re
 import urllib.request
 from mercapi import Mercapi
 from mercapi.requests import SearchRequestData
@@ -34,6 +34,7 @@ async def run():
     DIAG = {}
     for w in CONFIG['watches']:
         seen = set(state.get(w['name'], []))
+        watch_first = w['name'] not in state  # 新設の網は初回スキャンをベースラインに
         try:
             r = await m.search(
                 w['query'],
@@ -52,7 +53,12 @@ async def run():
         for it in items:
             iid = it.id_
             new_ids.append(iid)
-            if iid in seen or first_run:
+            if iid in seen or first_run or watch_first:
+                continue
+            name = it.name or ''
+            if w.get('title_require') and not re.search(w['title_require'], name, re.I):
+                continue
+            if w.get('title_block') and re.search(w['title_block'], name, re.I):
                 continue
             price = it.price or 0
             if price < w['price_min'] or price > w['price_max']:
