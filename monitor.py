@@ -14,6 +14,14 @@ CONFIG = json.load(open(os.path.join(BASE, 'config.json')))
 CONFIG['ntfy_topic'] = os.environ.get('NTFY_TOPIC') or CONFIG.get('ntfy_topic')
 STATE_PATH = os.path.join(BASE, 'state.json')
 DROP_MIN = CONFIG.get('drop_min', 1000)   # これ以上下がったら通知
+# 「○○様専用」= 他人の交渉で押さえられた玉（本命）。
+# 「AirPods専用ケース」のような"◯◯専用+アクセサリ"は別物なので除外する。
+SENYOU_RE = re.compile(r'(?:様|さま|サマ|さん)\s*専用|専用\s*(?:出品|ページ)|^\s*専用|専用\s*$')
+SENYOU_ACC_RE = re.compile(r'専用\s*(?:ケース|カバー|フィルム|ガラス|ケーブル|充電|スタンド|アダプタ|シート|リング|ホルダー|バンド|ストラップ|ポーチ|保護)')
+
+def is_senyou(name):
+    return bool(SENYOU_RE.search(name)) and not SENYOU_ACC_RE.search(name)
+
 KEEP = 300                                 # watchごとに保持するID数
 
 def notify(title, body, link, tags='moneybag', priority='high'):
@@ -101,7 +109,7 @@ async def run():
                 if w.get('title_block') and re.search(w['title_block'], name, re.I):
                     continue
                 cut = old - price
-                senyou = '専用' in name
+                senyou = is_senyou(name)
                 link = f"https://jp.mercari.com/item/{iid}"
                 tag = 'rotating_light' if senyou else 'chart_with_downwards_trend'
                 head = '専用化' if senyou else '値下'
@@ -115,7 +123,7 @@ async def run():
                 # --- 新規に帯へ入った玉 ---
                 if first_run or watch_first:
                     continue
-                senyou = '専用' in name
+                senyou = is_senyou(name)
                 if w.get('title_require') and not senyou and not re.search(w['title_require'], name, re.I):
                     continue
                 if w.get('title_block') and re.search(w['title_block'], name, re.I):
