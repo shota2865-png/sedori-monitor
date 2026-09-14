@@ -35,6 +35,41 @@
       "price_min": 22000,
       "price_max": 36000,
       "exclude": "Pro Plus ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム 100%"
+    },
+    {
+      "name": "iPhone15Pro",
+      "query": "iPhone15 Pro 128GB",
+      "price_min": 55000,
+      "price_max": 75000,
+      "exclude": "Max ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム"
+    },
+    {
+      "name": "iPad9世代",
+      "query": "iPad 第9世代 64GB",
+      "price_min": 16000,
+      "price_max": 27000,
+      "exclude": "ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム キーボード カバー Cellular セルラー"
+    },
+    {
+      "name": "iPad10世代",
+      "query": "iPad 第10世代 64GB",
+      "price_min": 30000,
+      "price_max": 45000,
+      "exclude": "ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム キーボード カバー Cellular セルラー"
+    },
+    {
+      "name": "MacBookAirM1事故拾い",
+      "query": "MacBook Air M1",
+      "price_min": 25000,
+      "price_max": 47000,
+      "exclude": "ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム 液晶 キーボード 充電器 2017 2018 2019 Intel i5 i7"
+    },
+    {
+      "name": "MacBookAirM2事故拾い",
+      "query": "MacBook Air M2",
+      "price_min": 38000,
+      "price_max": 62000,
+      "exclude": "ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム 液晶 キーボード 充電器 Intel"
     }
   ]
 }
