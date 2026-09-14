@@ -7,6 +7,7 @@ from mercapi.requests import SearchRequestData
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 CONFIG = json.load(open(os.path.join(BASE, 'config.json')))
+CONFIG['ntfy_topic'] = os.environ.get('NTFY_TOPIC') or CONFIG.get('ntfy_topic')
 STATE_PATH = os.path.join(BASE, 'state.json')
 
 def notify(title, body, link):

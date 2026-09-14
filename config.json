@@ -1,5 +1,5 @@
 {
-  "ntfy_topic": "shota-sedori-kx84w2",
+  "ntfy_topic": "SET_VIA_SECRET",
   "watches": [
     {"name": "iPhone14-128", "query": "iPhone14 128GB", "price_min": 26000, "price_max": 41000,
      "exclude": "Pro Plus ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム"},
