@@ -144,6 +144,51 @@
       "exclude": "ジャンク 箱のみ 空箱 部品 充電器のみ タッチペン 液晶 画面",
       "title_require": "3DS",
       "title_block": "2DS|DSi|DS\\s*Lite"
+    },
+    {
+      "name": "14ProMax",
+      "query": "iPhone14 Pro Max 256GB",
+      "price_min": 55000,
+      "price_max": 75000,
+      "exclude": "ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム",
+      "title_require": "14\\s*Pro\\s*Max",
+      "title_block": "11|12|13|15|16|17"
+    },
+    {
+      "name": "15ProMax",
+      "query": "iPhone15 Pro Max 256GB",
+      "price_min": 95000,
+      "price_max": 118000,
+      "exclude": "ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム",
+      "title_require": "15\\s*Pro\\s*Max",
+      "title_block": "11|12|13|14|16|17"
+    },
+    {
+      "name": "15ProMax劣化玉",
+      "query": "iPhone15 Pro Max バッテリー",
+      "price_min": 80000,
+      "price_max": 100000,
+      "exclude": "ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム 100%",
+      "title_require": "15\\s*Pro\\s*Max",
+      "title_block": "11|12|13|14|16|17"
+    },
+    {
+      "name": "MacBookAirM3事故拾い",
+      "query": "MacBook Air M3",
+      "price_min": 60000,
+      "price_max": 90000,
+      "exclude": "ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム 液晶 キーボード Intel",
+      "title_require": "M3",
+      "title_block": "M1|M2|M4|Intel"
+    },
+    {
+      "name": "MacBookProM系事故拾い",
+      "query": "MacBook Pro M1 M2",
+      "price_min": 55000,
+      "price_max": 95000,
+      "exclude": "ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム 液晶 キーボード Intel i5 i7 2017 2018 2019",
+      "title_require": "M[123]",
+      "title_block": "Intel|i[579]|2015|2016|2017|2018|2019"
     }
   ],
   "max_age_hours": 48,
