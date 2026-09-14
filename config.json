@@ -70,6 +70,34 @@
       "price_min": 38000,
       "price_max": 62000,
       "exclude": "ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム 液晶 キーボード 充電器 Intel"
+    },
+    {
+      "name": "Switch2事故拾い",
+      "query": "Switch2 本体",
+      "price_min": 20000,
+      "price_max": 33000,
+      "exclude": "ジャンク 箱のみ 空箱 専用 ソフト プロコン ケース フィルム カバー 有機 Lite"
+    },
+    {
+      "name": "Switch有機EL事故拾い",
+      "query": "Switch 有機EL 本体",
+      "price_min": 13000,
+      "price_max": 22000,
+      "exclude": "ジャンク 箱のみ 空箱 専用 ソフト プロコン ケース フィルム カバー Lite ドックのみ"
+    },
+    {
+      "name": "Quest3事故拾い",
+      "query": "Meta Quest 3 128GB",
+      "price_min": 22000,
+      "price_max": 38000,
+      "exclude": "3S ジャンク 箱のみ 専用 ケース ストラップ コントローラーのみ"
+    },
+    {
+      "name": "AirPodsPro2事故拾い",
+      "query": "AirPods Pro 第2世代",
+      "price_min": 8000,
+      "price_max": 13000,
+      "exclude": "ジャンク 片耳 左のみ 右のみ ケースのみ イヤーチップ 箱のみ 専用 互換"
     }
   ]
 }
