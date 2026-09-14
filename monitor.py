@@ -31,6 +31,7 @@ async def run():
     first_run = not state
     m = Mercapi()
     hits = 0
+    DIAG = {}
     for w in CONFIG['watches']:
         seen = set(state.get(w['name'], []))
         try:
@@ -43,8 +44,10 @@ async def run():
                 exclude=w.get('exclude'))
         except Exception as e:
             print(w['name'], 'search error:', e)
+            DIAG[w['name']] = 'ERR:' + str(e)[:80]
             continue
         items = r.items[:40]
+        DIAG[w['name']] = f"{len(items)}items" 
         new_ids = []
         for it in items:
             iid = it.id_
@@ -62,6 +65,15 @@ async def run():
         await asyncio.sleep(3)
     json.dump(state, open(STATE_PATH, 'w'))
     print(datetime.datetime.utcnow().isoformat(), 'done hits=', hits, '(baseline)' if first_run else '')
+    # 診断ログを -log トピックへ（購読不要・デバッグ用）
+    try:
+        req = urllib.request.Request(
+            f"https://ntfy.sh/{CONFIG['ntfy_topic']}-log",
+            data=json.dumps(DIAG).encode(), method='POST')
+        req.add_header('Priority', 'min')
+        urllib.request.urlopen(req, timeout=10)
+    except Exception:
+        pass
 
 if __name__ == '__main__':
     asyncio.run(run())
