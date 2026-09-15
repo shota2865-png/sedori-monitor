@@ -189,6 +189,42 @@
       "exclude": "ジャンク 割れ 空箱 箱のみ 専用 部品 マザーボード ケース フィルム 液晶 キーボード Intel i5 i7 2017 2018 2019",
       "title_require": "M[123]",
       "title_block": "Intel|i[579]|2015|2016|2017|2018|2019"
+    },
+    {
+      "name": "14-256クリーン",
+      "query": "iPhone14 256GB",
+      "price_min": 30000,
+      "price_max": 46000,
+      "exclude": "ケース カバー フィルム 空箱 箱のみ 部品 パネル フレーム プロテクター マザーボード ジャンク 割れ",
+      "title_require": "iPhone\\s*14",
+      "title_block": "Pro|Plus|Max|11|12|13|15|16|17|mini"
+    },
+    {
+      "name": "14-背面割れ(非ペアリング)",
+      "query": "iPhone14 背面割れ",
+      "price_min": 18000,
+      "price_max": 38000,
+      "exclude": "ケース カバー フィルム 空箱 箱のみ 部品 パネル フレーム プロテクター マザーボード",
+      "title_require": "iPhone\\s*14",
+      "title_block": "Pro|Plus|Max|11|12|13|15|16|17|mini"
+    },
+    {
+      "name": "14-レンズ割れ(非ペアリング)",
+      "query": "iPhone14 レンズ割れ",
+      "price_min": 18000,
+      "price_max": 40000,
+      "exclude": "ケース カバー フィルム 空箱 箱のみ 部品 パネル フレーム プロテクター マザーボード",
+      "title_require": "iPhone\\s*14",
+      "title_block": "Pro|Plus|Max|11|12|13|15|16|17|mini"
+    },
+    {
+      "name": "15-背面/レンズ割れ",
+      "query": "iPhone15 背面割れ",
+      "price_min": 25000,
+      "price_max": 46000,
+      "exclude": "ケース カバー フィルム 空箱 箱のみ 部品 パネル フレーム プロテクター マザーボード",
+      "title_require": "iPhone\\s*15",
+      "title_block": "Pro|Plus|Max|11|12|13|14|16|17"
     }
   ],
   "max_age_hours": 48,
