@@ -23,6 +23,20 @@ jobs:
           python-version: '3.12'
       - run: pip install -q -r requirements.txt
 
+      - name: 価格.com 買取相場スナップショット（巡回の前に必ず実行）
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          set +e
+          python kakaku.py
+          git config user.name  "sedori-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add price_history.jsonl latest.json
+          git diff --cached --quiet || git commit -m "kakaku $(date -u +%m%d)"
+          git pull --rebase origin main >/dev/null 2>&1 || true
+          git push >/dev/null 2>&1 || true
+          exit 0
+
       - name: scan loop (10分おきに5回)
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
