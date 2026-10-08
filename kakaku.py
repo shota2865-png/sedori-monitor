@@ -92,9 +92,35 @@ def notify(title, body):
     try: urllib.request.urlopen(req, timeout=15)
     except Exception as e: print('ntfy error:', e)
 
+def already_recorded_today(stamp):
+    """同じ日のレコードが既にあれば True。ワークフローは1時間ごとに連鎖するので、
+    これが無いと1日28回スナップショットして price_history.jsonl が膨れる。"""
+    if not os.path.exists(HIST):
+        return False
+    # 末尾から遡って探す（ファイル全体を読まない）
+    with open(HIST, 'rb') as f:
+        f.seek(0, os.SEEK_END)
+        size = f.tell()
+        back = min(size, 400_000)
+        f.seek(size - back)
+        tail = f.read().decode('utf-8', 'ignore')
+    for line in reversed(tail.splitlines()):
+        try:
+            if json.loads(line).get('date') == stamp:
+                return True
+        except Exception:
+            continue
+    return False
+
+
 def main():
     today = datetime.date.today()
     stamp = today.isoformat()
+
+    if '--force' not in sys.argv and already_recorded_today(stamp):
+        print(f'{stamp} は記録済み。スキップ（再実行は --force）')
+        return 0
+
     # 前回スナップショット（比較用）
     prev = {}
     if os.path.exists(HIST):
