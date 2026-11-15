@@ -1,8 +1,9 @@
 {
- "date": "2026-11-14",
+ "date": "2026-11-15",
  "rank": "細かなキズあり",
  "stale_excluded": [
-  "(2026-05-08)"
+  "(2026-05-08)",
+  "ダイワンテレコム(2026-07-17)"
  ],
  "buyback": {
   "iPhone 17 Pro Max 2048GB": {
@@ -51,39 +52,39 @@
    "updated": "2026-10-19"
   },
   "iPhone 16 Pro Max 1024GB": {
-   "price": 149000,
-   "vendor": "ダイワンテレコム",
-   "updated": "2026-07-17"
+   "price": 146700,
+   "vendor": "ウインク買取.COM",
+   "updated": "2026-10-19"
   },
   "iPhone 16 Pro Max 512GB": {
-   "price": 145000,
-   "vendor": "ダイワンテレコム",
-   "updated": "2026-07-17"
+   "price": 138600,
+   "vendor": "ウインク買取.COM",
+   "updated": "2026-10-19"
   },
   "iPhone 16 Pro Max 256GB": {
-   "price": 132000,
-   "vendor": "ダイワンテレコム",
-   "updated": "2026-07-17"
+   "price": 124200,
+   "vendor": "ウインク買取.COM",
+   "updated": "2026-10-19"
   },
   "iPhone 16 Pro 1024GB": {
-   "price": 137000,
-   "vendor": "ダイワンテレコム",
-   "updated": "2026-07-17"
+   "price": 133200,
+   "vendor": "ウインク買取.COM",
+   "updated": "2026-10-19"
   },
   "iPhone 16 Pro 512GB": {
-   "price": 128000,
-   "vendor": "ダイワンテレコム",
-   "updated": "2026-07-17"
+   "price": 126000,
+   "vendor": "ウインク買取.COM",
+   "updated": "2026-10-19"
   },
   "iPhone 16 Pro 256GB": {
-   "price": 120000,
-   "vendor": "ダイワンテレコム",
-   "updated": "2026-07-17"
+   "price": 110700,
+   "vendor": "ウインク買取.COM",
+   "updated": "2026-10-19"
   },
   "iPhone 16 Pro 128GB": {
-   "price": 109000,
-   "vendor": "ダイワンテレコム",
-   "updated": "2026-07-17"
+   "price": 101700,
+   "vendor": "ウインク買取.COM",
+   "updated": "2026-10-19"
   },
   "iPhone 16 512GB": {
    "price": 103500,
@@ -146,9 +147,9 @@
    "updated": "2026-10-19"
   },
   "iPhone 15 128GB": {
-   "price": 62000,
-   "vendor": "ダイワンテレコム",
-   "updated": "2026-07-17"
+   "price": 61200,
+   "vendor": "ウインク買取.COM",
+   "updated": "2026-10-19"
   },
   "iPhone 14 Pro Max 1024GB": {
    "price": 86400,
@@ -191,14 +192,14 @@
    "updated": "2026-10-19"
   },
   "iPhone 14 512GB": {
-   "price": 58000,
-   "vendor": "ダイワンテレコム",
-   "updated": "2026-07-17"
+   "price": 53100,
+   "vendor": "ウインク買取.COM",
+   "updated": "2026-10-19"
   },
   "iPhone 14 256GB": {
-   "price": 52000,
-   "vendor": "ダイワンテレコム",
-   "updated": "2026-07-17"
+   "price": 48600,
+   "vendor": "ウインク買取.COM",
+   "updated": "2026-10-19"
   },
   "iPhone 14 128GB": {
    "price": 44100,
@@ -206,9 +207,9 @@
    "updated": "2026-10-19"
   },
   "iPhone 13 512GB": {
-   "price": 42000,
-   "vendor": "ダイワンテレコム",
-   "updated": "2026-07-17"
+   "price": 40500,
+   "vendor": "ウインク買取.COM",
+   "updated": "2026-10-19"
   },
   "iPhone 13 256GB": {
    "price": 37800,
@@ -216,9 +217,9 @@
    "updated": "2026-10-19"
   },
   "iPhone 13 128GB": {
-   "price": 33000,
-   "vendor": "ダイワンテレコム",
-   "updated": "2026-07-17"
+   "price": 32400,
+   "vendor": "ウインク買取.COM",
+   "updated": "2026-10-19"
   }
  }
 }
